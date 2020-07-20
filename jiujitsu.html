@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jiujitsu-page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=East+Sea+Dokdo&family=Gugi&family=Modak&family=Montserrat&family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        div, header, section, article, aside, footer{
+            padding: 10px;
+        }
+        #container{
+            width: 900px;
+           /* 가운데 정렬 */
+           margin: 0 auto;
+           padding: 5px;
+           text-align: center;
+        }
+        #header{
+            height: 100px;
+            /* text-align:center; */
+            font-weight: bold;
+        }
+        #header span{
+            font-family: 'Gugi', cursive;
+            font-size: 80px;
+            text-shadow: 5px 5px 0px darkgray;
+                    
+        }
+        #content{
+            width: 600px;
+            height: 600px;
+            background-color: white;
+            float: left;
+            border: 3px solid black;
+        }
+        article h2{
+            font-family: 'Gugi', cursive;
+        }
+        article p{
+            font-family: 'Poor Story', cursive;
+            font-size: 20px;
+        }
+        .sideinfo{
+            border: 3px solid black;
+        }
+        #sideinfo1{
+            width:60px;
+            height: 600px;
+            background-color: black;
+            float: left;
+        }
+        #sideinfo2{
+            width:60px;
+            height: 600px;
+            background-color: white;
+            float: left;
+        }
+        #sideinfo3{
+            width:60px;
+            height: 600px;
+            background-color: black;
+            float: left;
+        }
+        #footer{
+            height: 100px;
+            background-color: white;
+            text-align:left;
+            font-weight: bold;
+        }
+       nav{
+           float: right;
+           margin-top: 10px;
+       }
+       nav ul li{
+           list-style-type: none;
+           float: left;
+           margin-right: 10px;
+           font-family: 'Poor Story', cursive;
+        }
+       
+    </style>
+</head>
+<body>
+       <!-- 내용의 연관성을 따진다면 section을 사용하는것 적합함!!! (div거의 사용 안함.) -->
+        <div id="container">
+            <header id="header">
+                <span> BRAZILIAN JIU-JITSU</span>   
+                <!-- 메뉴, 네비게이션등을 제공하는 태그. header, aside, footer등 자유롭게 사용 가능 -->
+                <nav>
+                    <ul>
+                        <li>[주짓수관련 링크]</li>
+                        <li><a href="https://www.youtube.com/channel/UCRYW2PQkvu6EKvyqRvo3gzA">기술영상</a></li>
+                        <li><a href="https://www.instagram.com/u_bjj_2017/">UBJJ(대학생주짓수연합동아리)</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- section : 연관된 컨텐츠를 그룹핑하는 용도 -->
+            <section id="content">
+                <!-- article: 독립적으로 구성될수있는 기사, 포스팅등을 감싸는 태그-->
+                <article>
+                    <h2>주짓수란?</h2>
+                    <p>원래 유도와 하나인 무술로, 유도가 브라질로 넘어가면서 주짓수라고 발음하게 되었습니다.</p> 
+                    <p>관절기 기술을 이용하여 상대방을 제압합니다.  비인기종목의 무술이었으나 최근 많은 매체등으로 인해 점차 대중화가 되고 있습니다.</p>    
+                </article>
+                <article>
+                    <h2>벨트란?</h2>
+                    <p>어느정도 수련이 쌓이게 되면 승급을 하게되는 증표로 주어지는 것이 벨트의 띠와 색의 변화이다.</p>
+                    <img src="image/jiujit-belt.png" alt="" width="350px" height="200px">
+                </article>
+            </section>
+            <aside class="sideinfo" id="sideinfo1"></aside>
+            <aside class="sideinfo" id="sideinfo2"></aside>
+            <aside class="sideinfo" id="sideinfo3"></aside>
+            <footer id="footer"></footer>
+          </div>
+          
+    </div>
+</body>
+</html>

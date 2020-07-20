@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roadmap-page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=East+Sea+Dokdo&family=Gugi&family=Modak&family=Montserrat&family=Poor+Story&display=swap" rel="stylesheet">
+</head>
+<style>
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #002752;
+  color: #fff;
+}
+
+
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section {
+  background: rgb(0, 58, 105);
+  padding: 20px 0;
+}
+
+.section .container {
+  width: 50%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  font-family: 'Gugi', cursive;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+ 
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+ 
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 300px;
+  height: 3px;
+  background: #fff;
+}
+ 
+.timeline ol li:last-child {
+  width: 10000px;
+}
+ 
+.timeline ol li:not(:first-child) {
+  margin-left: 15px;
+}
+ 
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #f8f404;
+}
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+</style>
+
+<body>
+    <section class="section intro">
+        <div class="container">
+          <h1>roadmap timeline</h1>
+        </div>
+      </section>
+      
+      <section class="timeline">
+        <ol>
+          <li>
+            <div>
+                <time>front-end / back-end</time>
+                여전히 고민중
+            </div>
+        </li>
+        <li> 
+            <div>
+                <time>2020 초급개발자</time>
+                Java, SQL, css, html, 
+                Javasript 등 습득
+                /spring 습득
+            </div>
+        </li>
+        <li>
+            <div>
+                <time> 2021~2023 중급개발자</time>
+                웹사이트 및 어플리케이션 개발 협업
+            </div>
+        </li>
+        <li>
+            <div>
+            </div>
+          </li>
+        </ol>
+  
+        
+      </section>
+</body>
+</html>
+
